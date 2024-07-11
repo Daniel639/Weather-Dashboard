@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+aside {
+    width: 30%;
+}
+
+section {
+    width: 70%;
+}
+
+#search-form {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-history button {
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+#current-weather {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#forecast-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    main {
+    flex-direction: column;
+}
+    
+aside, section {
+    width: 100%;
+}
+
+#forecast-cards {
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    width: 48%;
+    margin-bottom: 10px;
+}
+}
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+}
+.footer a {
+    color: white; 
+    text-decoration: none; 
+}
